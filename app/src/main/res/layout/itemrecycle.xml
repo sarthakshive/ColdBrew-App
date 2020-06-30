@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader_image">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/image"
+            android:src="@mipmap/ic_launcher"
+            android:elevation="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_loader"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rotate"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclename"
+        android:layout_below="@id/loader_image"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        tools:visibility="visible"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
